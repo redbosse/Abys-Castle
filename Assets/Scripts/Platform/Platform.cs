@@ -13,6 +13,9 @@ public class Platform : MonoBehaviour
     [SerializeField]
     private Vector3 upOffset;
 
+    [SerializeField]
+    private LayerMask layer;
+
     private Transform playerTransform;
 
     private bool isDown = true;
@@ -43,7 +46,14 @@ public class Platform : MonoBehaviour
             }
 
             if (playerTransform is not null)
-                playerTransform.position = new Vector3(playerTransform.position.x, transform.position.y + upOffset.y, playerTransform.position.z);
+            {
+                RaycastHit hit;
+
+                if (Physics.Raycast(playerTransform.position, Vector3.down, out hit, layer))
+                {
+                    playerTransform.position = new Vector3(playerTransform.position.x, hit.point.y + upOffset.y, playerTransform.position.z);
+                }
+            }
         }
     }
 

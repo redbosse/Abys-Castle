@@ -65,7 +65,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.37412697
+      - time: 0.35756648
         functionName: sw
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: d540e84b6f0d1ce4c9e965e30206197c,
@@ -73,7 +73,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.7005109
+      - time: 0.7196192
         functionName: swordD
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: d540e84b6f0d1ce4c9e965e30206197c,
@@ -81,7 +81,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.72558165
+      - time: 0.76379824
         functionName: EndAttack
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: d540e84b6f0d1ce4c9e965e30206197c,
